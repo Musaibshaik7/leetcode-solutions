@@ -1,0 +1,12 @@
+name="musaib"
+name=list(name)
+right=len(name)-1
+left=0
+while(left<right):
+    temp=name[right]
+    name[right]=name[left]
+    name[left]=temp
+    right-=1
+    left+=1
+name="".join(name)
+print(name)
